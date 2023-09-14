@@ -1,0 +1,1011 @@
+Thu 14 Sep 2023 02:27:11 AM UTC: 
+ treemap.c | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:42:53: error: ‘Treemap’ undeclared (first use in this function); did you mean ‘TreeMap’?
+   42 |   TreeMap * newTreeMap = (TreeMap *) malloc (sizeof(Treemap));
+      |                                                     ^~~~~~~
+      |                                                     TreeMap
+treemap.c:42:53: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:43:7: error: ‘treeMap’ undeclared (first use in this function); did you mean ‘TreeMap’?
+   43 |   if (treeMap == NULL)
+      |       ^~~~~~~
+      |       TreeMap
+treemap.c:47:14: error: assignment to ‘TreeMap *’ from incompatible pointer type ‘int (*)(void *, void *)’ [-Werror=incompatible-pointer-types]
+   47 |   newTreeMap = lower_than;
+      |              ^
+cc1: all warnings being treated as errors
+Compilation failed
+70b7264
+Thu 14 Sep 2023 02:27:57 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:42:53: error: ‘Treemap’ undeclared (first use in this function); did you mean ‘TreeMap’?
+   42 |   TreeMap * newTreeMap = (TreeMap *) malloc (sizeof(Treemap));
+      |                                                     ^~~~~~~
+      |                                                     TreeMap
+treemap.c:42:53: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:47:14: error: assignment to ‘TreeMap *’ from incompatible pointer type ‘int (*)(void *, void *)’ [-Werror=incompatible-pointer-types]
+   47 |   newTreeMap = lower_than;
+      |              ^
+cc1: all warnings being treated as errors
+Compilation failed
+3c21d96
+Thu 14 Sep 2023 02:28:11 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:47:14: error: assignment to ‘TreeMap *’ from incompatible pointer type ‘int (*)(void *, void *)’ [-Werror=incompatible-pointer-types]
+   47 |   newTreeMap = lower_than;
+      |              ^
+cc1: all warnings being treated as errors
+Compilation failed
+da3118b
+Thu 14 Sep 2023 02:28:34 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|8
+total_score: 0/70
+c5b9ebe
+Thu 14 Sep 2023 02:29:07 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|7
+total_score: 5/70
+79d8998
+Thu 14 Sep 2023 02:38:44 AM UTC: 
+ treemap.c | 21 ++++++++++++++++++++-
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:89:20: error: returning ‘TreeNode *’ from a function with incompatible return type ‘Pair *’ [-Werror=incompatible-pointer-types]
+   89 |         return tree->current;
+      |                ~~~~^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7d23637
+Thu 14 Sep 2023 02:39:07 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|7
+total_score: 5/70
+eef94a6
+Thu 14 Sep 2023 02:40:58 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|7
+total_score: 5/70
+6d9a0c3
+Thu 14 Sep 2023 02:41:50 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:86:43: error: ‘node’ undeclared (first use in this function)
+   86 |       comparacion = tree->lower_than(key, node->pair);
+      |                                           ^~~~
+treemap.c:86:43: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+66054bc
+Thu 14 Sep 2023 02:42:15 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:86:43: error: ‘node’ undeclared (first use in this function)
+   86 |       comparacion = tree->lower_than(key, node->pair->key);
+      |                                           ^~~~
+treemap.c:86:43: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+2d20107
+Thu 14 Sep 2023 02:42:49 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|7
+total_score: 5/70
+374b638
+Thu 14 Sep 2023 02:43:22 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|7
+total_score: 5/70
+34920fc
+Thu 14 Sep 2023 02:46:02 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|7
+total_score: 5/70
+3384135
+Thu 14 Sep 2023 02:49:27 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:82:13: error: unused variable ‘current’ [-Werror=unused-variable]
+   82 |   TreeNode *current = tree->root;
+      |             ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4be97fc
+Thu 14 Sep 2023 02:49:44 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+b2de63c
+Thu 14 Sep 2023 02:50:36 AM UTC: 
+ treemap.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+ tests:  0|0
+4b8e88e
+Thu 14 Sep 2023 02:51:25 AM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  6|7
+total_score: 5/70
+d187055
+Thu 14 Sep 2023 02:58:04 AM UTC: 
+ treemap.c | 23 +++++++++++++++++++++--
+ 1 file changed, 21 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:61:54: error: ‘TreeNode’ has no member named ‘key’
+   61 |       int comparacion = tree->lower_than(key, current->key->pair);
+      |                                                      ^~
+treemap.c:57:14: error: variable ‘padre’ set but not used [-Werror=unused-but-set-variable]
+   57 |   TreeNode * padre = NULL;
+      |              ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b9177de
+Thu 14 Sep 2023 02:58:20 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:57:14: error: variable ‘padre’ set but not used [-Werror=unused-but-set-variable]
+   57 |   TreeNode * padre = NULL;
+      |              ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e0517aa
+Thu 14 Sep 2023 03:02:20 AM UTC: 
+ treemap.c | 17 +++++++----------
+ 1 file changed, 7 insertions(+), 10 deletions(-)
+ tests:  6|7
+total_score: 5/70
+8e115f7
+Thu 14 Sep 2023 03:04:14 AM UTC: 
+ treemap.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:68:22: error: unused variable ‘nuevoNode’ [-Werror=unused-variable]
+   68 |           TreeNode * nuevoNode = createTreeNode(key, value);
+      |                      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b77677d
+Thu 14 Sep 2023 03:05:17 AM UTC: 
+ treemap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:59:47: error: ‘current’ undeclared (first use in this function)
+   59 |       int comparacion = tree->lower_than(key, current->pair->key);
+      |                                               ^~~~~~~
+treemap.c:59:47: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:69:23: error: ‘parent’ undeclared (first use in this function)
+   69 |           nuevoNode = parent = tree->current;
+      |                       ^~~~~~
+treemap.c:68:22: error: variable ‘nuevoNode’ set but not used [-Werror=unused-but-set-variable]
+   68 |           TreeNode * nuevoNode = createTreeNode(key, value);
+      |                      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b7f64b9
+Thu 14 Sep 2023 03:06:15 AM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:59:47: error: ‘current’ undeclared (first use in this function)
+   59 |       int comparacion = tree->lower_than(key, current->pair->key);
+      |                                               ^~~~~~~
+treemap.c:59:47: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+68438ff
+Thu 14 Sep 2023 03:20:07 AM UTC: 
+ treemap.c | 35 ++++++-----------------------------
+ 1 file changed, 6 insertions(+), 29 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:42:1: error: control reaches end of non-void function [-Werror=return-type]
+   42 | }
+      | ^
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:99:1: error: control reaches end of non-void function [-Werror=return-type]
+   99 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+53e96ef
+Thu 14 Sep 2023 03:22:03 AM UTC: 
+ treemap.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:71:22: error: unused variable ‘nuevoNode’ [-Werror=unused-variable]
+   71 |           TreeNode * nuevoNode = createTreeNode(key, value);
+      |                      ^~~~~~~~~
+treemap.c: In function ‘createTreeMap’:
+treemap.c:42:1: error: control reaches end of non-void function [-Werror=return-type]
+   42 | }
+      | ^
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:102:1: error: control reaches end of non-void function [-Werror=return-type]
+  102 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d410f6f
+Thu 14 Sep 2023 03:22:49 AM UTC: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:42:1: error: control reaches end of non-void function [-Werror=return-type]
+   42 | }
+      | ^
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:103:1: error: control reaches end of non-void function [-Werror=return-type]
+  103 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+c8c1693
+Thu 14 Sep 2023 03:24:10 AM UTC: 
+ treemap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:42:1: error: control reaches end of non-void function [-Werror=return-type]
+   42 | }
+      | ^
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:107:1: error: control reaches end of non-void function [-Werror=return-type]
+  107 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+2fa33ae
+Thu 14 Sep 2023 03:25:20 AM UTC: 
+ treemap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:42:1: error: control reaches end of non-void function [-Werror=return-type]
+   42 | }
+      | ^
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:109:1: error: control reaches end of non-void function [-Werror=return-type]
+  109 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+044cd12
+Thu 14 Sep 2023 03:26:45 AM UTC: 
+ treemap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:41:1: error: control reaches end of non-void function [-Werror=return-type]
+   41 | }
+      | ^
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:108:1: error: control reaches end of non-void function [-Werror=return-type]
+  108 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+9f76f19
+Thu 14 Sep 2023 03:27:15 AM UTC: 
+ treemap.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:119:1: error: control reaches end of non-void function [-Werror=return-type]
+  119 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+16bbe8e
+Thu 14 Sep 2023 03:27:40 AM UTC: 
+ treemap.c | 22 +++++++++++++++++++---
+ 1 file changed, 19 insertions(+), 3 deletions(-)
+ tests:  6|7
+total_score: 5/70
+61321ba
+Thu 14 Sep 2023 03:49:20 AM UTC: 
+ treemap.c | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+ tests:  8|6
+total_score: 5/70
+41813fb
+Thu 14 Sep 2023 03:52:54 AM UTC: 
+ treemap.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:106:14: error: unused variable ‘parent’ [-Werror=unused-variable]
+  106 |   TreeNode * parent = node->parent;
+      |              ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e70a6d1
+Thu 14 Sep 2023 03:53:42 AM UTC: 
+ treemap.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+ tests:  8|6
+total_score: 5/70
+d1b9d90
+Thu 14 Sep 2023 03:54:38 AM UTC: 
+ treemap.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+ tests:  8|6
+total_score: 5/70
+d30fb10
+Thu 14 Sep 2023 03:55:41 AM UTC: 
+ treemap.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ tests:  8|6
+total_score: 5/70
+85c08de
+Thu 14 Sep 2023 04:04:22 AM UTC: 
+ treemap.c | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+ tests:  8|6
+total_score: 5/70
+bb6bddb
+Thu 14 Sep 2023 04:05:54 AM UTC: 
+ treemap.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:153:14: error: unused variable ‘minDerecha’ [-Werror=unused-variable]
+  153 |   TreeNode * minDerecha = minimum(node->right);
+      |              ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c3cbc28
+Thu 14 Sep 2023 04:06:56 AM UTC: 
+ treemap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+ tests:  8|6
+total_score: 5/70
+e64100b
+Thu 14 Sep 2023 04:07:20 AM UTC: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  8|6
+total_score: 5/70
+c9a1cbf
+Thu 14 Sep 2023 04:11:38 AM UTC: 
+ treemap.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+ tests:  10|5
+total_score: 10/70
+d868d12
+Thu 14 Sep 2023 04:13:10 AM UTC: 
+ treemap.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+ tests:  10|5
+total_score: 10/70
+aefa389
+Thu 14 Sep 2023 04:14:15 AM UTC: 
+ treemap.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:226:1: error: control reaches end of non-void function [-Werror=return-type]
+  226 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+b8d2e25
+Thu 14 Sep 2023 04:15:28 AM UTC: 
+ treemap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:230:1: error: control reaches end of non-void function [-Werror=return-type]
+  230 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d2d0b67
+Thu 14 Sep 2023 04:16:09 AM UTC: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:231:1: error: control reaches end of non-void function [-Werror=return-type]
+  231 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+b283b38
+Thu 14 Sep 2023 04:16:53 AM UTC: 
+ treemap.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+ tests:  15|4
+total_score: 25/70
+0806d65
+Thu 14 Sep 2023 04:20:09 AM UTC: 
+ treemap.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:201:3: error: expected ‘,’ or ‘;’ before ‘return’
+  201 |   return NULL;
+      |   ^~~~~~
+treemap.c:200:14: error: unused variable ‘ub_node’ [-Werror=unused-variable]
+  200 |   TreeNode * ub_node = NULL
+      |              ^~~~~~~
+treemap.c:199:14: error: unused variable ‘current’ [-Werror=unused-variable]
+  199 |   TreeNode * current = tree->root;
+      |              ^~~~~~~
+treemap.c:202:1: error: control reaches end of non-void function [-Werror=return-type]
+  202 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+29ac719
+Thu 14 Sep 2023 04:20:18 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:200:14: error: unused variable ‘ub_node’ [-Werror=unused-variable]
+  200 |   TreeNode * ub_node = NULL;
+      |              ^~~~~~~
+treemap.c:199:14: error: unused variable ‘current’ [-Werror=unused-variable]
+  199 |   TreeNode * current = tree->root;
+      |              ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2171509
+Thu 14 Sep 2023 04:21:29 AM UTC: 
+ treemap.c | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:204:7: error: expected ‘,’ or ‘;’ before ‘{’ token
+  204 |       {
+      |       ^
+treemap.c:203:11: error: unused variable ‘comparacion’ [-Werror=unused-variable]
+  203 |       int comparacion = tree->lower_than(key, current->pair->key)
+      |           ^~~~~~~~~~~
+treemap.c:200:14: error: unused variable ‘ub_node’ [-Werror=unused-variable]
+  200 |   TreeNode * ub_node = NULL;
+      |              ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3215fea
+Thu 14 Sep 2023 04:22:19 AM UTC: 
+ treemap.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:204:7: error: expected ‘,’ or ‘;’ before ‘{’ token
+  204 |       {
+      |       ^
+treemap.c:203:11: error: unused variable ‘comparacion’ [-Werror=unused-variable]
+  203 |       int comparacion = tree->lower_than(key, current->pair->key)
+      |           ^~~~~~~~~~~
+treemap.c:200:14: error: unused variable ‘ub_node’ [-Werror=unused-variable]
+  200 |   TreeNode * ub_node = NULL;
+      |              ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+399bb36
+Thu 14 Sep 2023 04:22:55 AM UTC: 
+ treemap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+Compilation failed
+155cbda
+Thu 14 Sep 2023 04:24:25 AM UTC: 
+ treemap.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:204:7: error: expected ‘,’ or ‘;’ before ‘{’ token
+  204 |       {
+      |       ^
+treemap.c:203:11: error: unused variable ‘comparacion’ [-Werror=unused-variable]
+  203 |       int comparacion = tree->lower_than(key, current->pair->key)
+      |           ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f924f4a
+Thu 14 Sep 2023 04:24:38 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  15|4
+total_score: 25/70
+a3fcb66
+Thu 14 Sep 2023 03:16:12 PM UTC: 
+ treemap.c | 34 ++++------------------------------
+ 1 file changed, 4 insertions(+), 30 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:58:13: error: unused variable ‘parent’ [-Werror=unused-variable]
+   58 |   TreeNode *parent = NULL;
+      |             ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+84d1780
+Thu 14 Sep 2023 03:16:41 PM UTC: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:58:13: error: variable ‘parent’ set but not used [-Werror=unused-but-set-variable]
+   58 |   TreeNode *parent = NULL;
+      |             ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ba22917
+Thu 14 Sep 2023 03:17:36 PM UTC: 
+ treemap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:58:13: error: variable ‘parent’ set but not used [-Werror=unused-but-set-variable]
+   58 |   TreeNode *parent = NULL;
+      |             ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c6cf695
+Thu 14 Sep 2023 03:18:08 PM UTC: 
+ treemap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:58:13: error: variable ‘parent’ set but not used [-Werror=unused-but-set-variable]
+   58 |   TreeNode *parent = NULL;
+      |             ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+dcadac4
+Thu 14 Sep 2023 03:19:45 PM UTC: 
+ treemap.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+ tests:  15|4
+total_score: 25/70
+9a48ec1
+Thu 14 Sep 2023 03:20:52 PM UTC: 
+ treemap.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+ tests:  16|4
+total_score: 25/70
+e69a974
+Thu 14 Sep 2023 03:21:24 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  16|4
+total_score: 25/70
+6819b88
+Thu 14 Sep 2023 03:21:45 PM UTC: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  17|3
+total_score: 35/70
+6593c07
+Thu 14 Sep 2023 03:27:16 PM UTC: 
+ treemap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:100:12: error: suggest parentheses around comparison in operand of ‘|’ [-Werror=parentheses]
+  100 |   if (node == NULL | tree == NULL)
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+5b50952
+Thu 14 Sep 2023 03:27:47 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|3
+total_score: 35/70
+83d852c
+Thu 14 Sep 2023 03:29:01 PM UTC: 
+ treemap.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  17|3
+total_score: 35/70
+256a83a
+Thu 14 Sep 2023 03:31:42 PM UTC: 
+ treemap.c | 11 +++++------
+ 1 file changed, 5 insertions(+), 6 deletions(-)
+ tests:  17|3
+total_score: 35/70
+dde33c7
+Thu 14 Sep 2023 03:33:30 PM UTC: 
+ treemap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+ tests:  17|3
+total_score: 35/70
+f4d65df
+Thu 14 Sep 2023 03:34:49 PM UTC: 
+ treemap.c | 7 ++-----
+ 1 file changed, 2 insertions(+), 5 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:138:22: error: ‘hijo’ undeclared (first use in this function)
+  138 |       parent->left = hijo;
+      |                      ^~~~
+treemap.c:138:22: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+3cbe90a
+Thu 14 Sep 2023 03:35:49 PM UTC: 
+ treemap.c | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:142:5: error: expected ‘}’ before ‘else’
+  142 |     else
+      |     ^~~~
+treemap.c:146:23: error: ‘hijo’ undeclared (first use in this function)
+  146 |       parent->right = hijo;
+      |                       ^~~~
+treemap.c:146:23: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c: At top level:
+treemap.c:150:35: error: ‘node’ undeclared here (not in a function)
+  150 |   TreeNode * minDerecha = minimum(node->right);
+      |                                   ^~~~
+treemap.c:151:7: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+  151 |   node->pair->key = minDerecha->pair->key;
+      |       ^~
+treemap.c:152:7: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+  152 |   node->pair->value = minDerecha->pair->value;
+      |       ^~
+treemap.c:153:3: error: data definition has no type or storage class [-Werror]
+  153 |   removeNode(tree, minDerecha);
+      |   ^~~~~~~~~~
+treemap.c:153:3: error: type defaults to ‘int’ in declaration of ‘removeNode’ [-Werror=implicit-int]
+treemap.c:153:3: error: parameter names (without types) in function declaration [-Werror]
+treemap.c:153:3: error: conflicting types for ‘removeNode’; have ‘int()’
+treemap.c:98:6: note: previous definition of ‘removeNode’ with type ‘void(TreeMap *, TreeNode *)’
+   98 | void removeNode(TreeMap * tree, TreeNode* node)
+      |      ^~~~~~~~~~
+treemap.c:154:1: error: expected identifier or ‘(’ before ‘}’ token
+  154 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+ef33386
+Thu 14 Sep 2023 03:36:21 PM UTC: 
+ treemap.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:141:5: error: expected ‘}’ before ‘else’
+  141 |     else
+      |     ^~~~
+treemap.c:145:23: error: ‘hijo’ undeclared (first use in this function)
+  145 |       parent->right = hijo;
+      |                       ^~~~
+treemap.c:145:23: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c: At top level:
+treemap.c:149:35: error: ‘node’ undeclared here (not in a function)
+  149 |   TreeNode * minDerecha = minimum(node->right);
+      |                                   ^~~~
+treemap.c:150:7: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+  150 |   node->pair->key = minDerecha->pair->key;
+      |       ^~
+treemap.c:151:7: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+  151 |   node->pair->value = minDerecha->pair->value;
+      |       ^~
+treemap.c:152:3: error: data definition has no type or storage class [-Werror]
+  152 |   removeNode(tree, minDerecha);
+      |   ^~~~~~~~~~
+treemap.c:152:3: error: type defaults to ‘int’ in declaration of ‘removeNode’ [-Werror=implicit-int]
+treemap.c:152:3: error: parameter names (without types) in function declaration [-Werror]
+treemap.c:152:3: error: conflicting types for ‘removeNode’; have ‘int()’
+treemap.c:98:6: note: previous definition of ‘removeNode’ with type ‘void(TreeMap *, TreeNode *)’
+   98 | void removeNode(TreeMap * tree, TreeNode* node)
+      |      ^~~~~~~~~~
+treemap.c:153:1: error: expected identifier or ‘(’ before ‘}’ token
+  153 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+572ba46
+Thu 14 Sep 2023 03:37:23 PM UTC: 
+ treemap.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:146:5: error: expected ‘}’ before ‘else’
+  146 |     else
+      |     ^~~~
+treemap.c:150:23: error: ‘hijo’ undeclared (first use in this function)
+  150 |       parent->right = hijo;
+      |                       ^~~~
+treemap.c:150:23: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c: At top level:
+treemap.c:154:35: error: ‘node’ undeclared here (not in a function)
+  154 |   TreeNode * minDerecha = minimum(node->right);
+      |                                   ^~~~
+treemap.c:155:7: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+  155 |   node->pair->key = minDerecha->pair->key;
+      |       ^~
+treemap.c:156:7: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+  156 |   node->pair->value = minDerecha->pair->value;
+      |       ^~
+treemap.c:157:3: error: data definition has no type or storage class [-Werror]
+  157 |   removeNode(tree, minDerecha);
+      |   ^~~~~~~~~~
+treemap.c:157:3: error: type defaults to ‘int’ in declaration of ‘removeNode’ [-Werror=implicit-int]
+treemap.c:157:3: error: parameter names (without types) in function declaration [-Werror]
+treemap.c:157:3: error: conflicting types for ‘removeNode’; have ‘int()’
+treemap.c:98:6: note: previous definition of ‘removeNode’ with type ‘void(TreeMap *, TreeNode *)’
+   98 | void removeNode(TreeMap * tree, TreeNode* node)
+      |      ^~~~~~~~~~
+treemap.c:158:1: error: expected identifier or ‘(’ before ‘}’ token
+  158 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+4103f98
+Thu 14 Sep 2023 03:37:38 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:146:5: error: expected ‘}’ before ‘else’
+  146 |     else
+      |     ^~~~
+treemap.c:150:23: error: ‘hijo’ undeclared (first use in this function)
+  150 |       parent->right = hijo;
+      |                       ^~~~
+treemap.c:150:23: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c: At top level:
+treemap.c:154:35: error: ‘node’ undeclared here (not in a function)
+  154 |   TreeNode * minDerecha = minimum(node->right);
+      |                                   ^~~~
+treemap.c:155:7: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+  155 |   node->pair->key = minDerecha->pair->key;
+      |       ^~
+treemap.c:156:7: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+  156 |   node->pair->value = minDerecha->pair->value;
+      |       ^~
+treemap.c:157:3: error: data definition has no type or storage class [-Werror]
+  157 |   removeNode(tree, minDerecha);
+      |   ^~~~~~~~~~
+treemap.c:157:3: error: type defaults to ‘int’ in declaration of ‘removeNode’ [-Werror=implicit-int]
+treemap.c:157:3: error: parameter names (without types) in function declaration [-Werror]
+treemap.c:157:3: error: conflicting types for ‘removeNode’; have ‘int()’
+treemap.c:98:6: note: previous definition of ‘removeNode’ with type ‘void(TreeMap *, TreeNode *)’
+   98 | void removeNode(TreeMap * tree, TreeNode* node)
+      |      ^~~~~~~~~~
+treemap.c:158:1: error: expected identifier or ‘(’ before ‘}’ token
+  158 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+95a8d12
+Thu 14 Sep 2023 03:40:22 PM UTC: 
+ treemap.c | 17 +++++++++--------
+ 1 file changed, 9 insertions(+), 8 deletions(-)
+ tests:  17|3
+total_score: 35/70
+e9def0f
+Thu 14 Sep 2023 03:41:05 PM UTC: 
+ treemap.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ tests:  17|3
+total_score: 35/70
+b3e4775
+Thu 14 Sep 2023 03:41:37 PM UTC: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  17|3
+total_score: 35/70
+db1ef86
+Thu 14 Sep 2023 03:43:02 PM UTC: 
+ treemap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+ tests:  17|3
+total_score: 35/70
+ea26ce5
+Thu 14 Sep 2023 03:43:39 PM UTC: 
+ treemap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:173:16: error: unused variable ‘nodoMin’ [-Werror=unused-variable]
+  173 |     TreeNode * nodoMin = minimum(node->right);
+      |                ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+137ad58
+Thu 14 Sep 2023 03:44:16 PM UTC: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  17|3
+total_score: 35/70
+e98f665
+Thu 14 Sep 2023 03:44:44 PM UTC: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  17|3
+total_score: 35/70
+cb1627d
+Thu 14 Sep 2023 03:45:06 PM UTC: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  17|3
+total_score: 35/70
+5dd5869
+Thu 14 Sep 2023 03:47:01 PM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  17|3
+total_score: 35/70
+43f1782
+Thu 14 Sep 2023 03:48:26 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|3
+total_score: 35/70
+24eaf54
+Thu 14 Sep 2023 03:48:37 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|3
+total_score: 35/70
+ca4eb92
+Thu 14 Sep 2023 03:53:28 PM UTC: 
+ treemap.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:175:3: error: ‘else’ without a previous ‘if’
+  175 |   else
+      |   ^~~~
+Compilation failed
+c6539cb
+Thu 14 Sep 2023 05:40:53 PM UTC: 
+ treemap.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:175:3: error: ‘else’ without a previous ‘if’
+  175 |   else
+      |   ^~~~
+Compilation failed
+84b1ef6
+Thu 14 Sep 2023 05:41:11 PM UTC: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:175:3: error: ‘else’ without a previous ‘if’
+  175 |   else
+      |   ^~~~
+Compilation failed
+678fb5c
+Thu 14 Sep 2023 05:47:40 PM UTC: 
+ treemap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  0|0
+54f97f9
+Thu 14 Sep 2023 05:48:46 PM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  17|3
+total_score: 35/70
+6b42fd0
+Thu 14 Sep 2023 05:49:09 PM UTC: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  17|3
+total_score: 35/70
+22cffde
+Thu 14 Sep 2023 05:55:15 PM UTC: 
+ treemap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ tests:  17|3
+total_score: 35/70
+c12ef63
+Thu 14 Sep 2023 06:02:18 PM UTC: 
+ treemap.c | 22 +++++++++++-----------
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:116:30: error: ‘TreeNode’ has no member named ‘padre’
+  116 |       TreeNode * padre = node->padre;
+      |                              ^~
+treemap.c:116:18: error: unused variable ‘padre’ [-Werror=unused-variable]
+  116 |       TreeNode * padre = node->padre;
+      |                  ^~~~~
+treemap.c:155:15: error: unused variable ‘sucesor’ [-Werror=unused-variable]
+  155 |     TreeNode *sucesor = minimum(node->right);
+      |               ^~~~~~~
+treemap.c:178:3: error: ‘else’ without a previous ‘if’
+  178 |   else
+      |   ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bf6480d
+Thu 14 Sep 2023 06:04:00 PM UTC: 
+ treemap.c | 31 +++----------------------------
+ 1 file changed, 3 insertions(+), 28 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:116:30: error: ‘TreeNode’ has no member named ‘padre’
+  116 |       TreeNode * padre = node->padre;
+      |                              ^~
+treemap.c:116:18: error: unused variable ‘padre’ [-Werror=unused-variable]
+  116 |       TreeNode * padre = node->padre;
+      |                  ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+dbc8ca2
+Thu 14 Sep 2023 06:04:22 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:116:18: error: unused variable ‘padre’ [-Werror=unused-variable]
+  116 |       TreeNode * padre = node->parent;
+      |                  ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7c9454c
+Thu 14 Sep 2023 06:04:36 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:104:14: error: unused variable ‘parent’ [-Werror=unused-variable]
+  104 |   TreeNode * parent = node->parent;
+      |              ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e5e463b
+Thu 14 Sep 2023 06:05:28 PM UTC: 
+ treemap.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  17|3
+total_score: 35/70
+b9d9d73
+Thu 14 Sep 2023 06:08:23 PM UTC: 
+ treemap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+ tests:  17|3
+total_score: 35/70
+9b952ae
+Thu 14 Sep 2023 06:08:56 PM UTC: 
+ treemap.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+ tests:  17|3
+total_score: 35/70
+2981f7d
+Thu 14 Sep 2023 06:17:34 PM UTC: 
+ treemap.c | 23 ++++++++---------------
+ 1 file changed, 8 insertions(+), 15 deletions(-)
+ tests:  21|2
+total_score: 45/70
+9c1548b
+Thu 14 Sep 2023 06:23:53 PM UTC: 
+ treemap.c | 13 ++++++-------
+ 1 file changed, 6 insertions(+), 7 deletions(-)
+ tests:  29|0
+total_score: 70/70
+9fbc8ca
